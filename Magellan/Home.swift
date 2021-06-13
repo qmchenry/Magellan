@@ -15,10 +15,14 @@ struct Home: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 30) {
-                ForEach(Array(zip(buyables.indices, buyables)), id: \.0) { index, buyable in
-                    NavigationLink("Purchase \(buyable)", destination: Purchase(item: buyable), isActive: $nav.isActive[index])
+            ScrollView {
+                VStack(spacing: 30) {
+                    ForEach(Array(zip(buyables.indices, buyables)), id: \.0) { index, buyable in
+                        NavigationLink("Purchase \(buyable)", destination: Purchase(item: buyable), isActive: $nav.isActive[index])
+                    }
+                    Text("AppState doesn't need to reflect every view that takes over the screen, only those for which programmatic navigation is required. For example, the fist page in a navigation stack likely needs to be represented by State, like the Purchase views here. However, if the purchase flow was several navigation links long, each page in this stack should not need a State case. In fact, unless the view model properties leading up to that sub-page could be encapsulated by the State, it wouldn't work as those pages' view models wouldn't be able to gather user input along the way.")
                 }
+                .padding(.horizontal)
             }
         }
         .navigationBarTitle("Home Sweet Home")
