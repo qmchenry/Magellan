@@ -20,7 +20,7 @@ struct ContentView: View {
             case .unauthenticated:
                 Unauthenticated()
             case .tabView:
-                Text("TabView")
+                TabScene()
             }
         }
         .onReceive(state.$state) { state in

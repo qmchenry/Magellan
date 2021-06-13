@@ -19,6 +19,9 @@
 		A91BEF4E26759AC4003371A4 /* Unauthenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */; };
 		A91BEF5026759F99003371A4 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4F26759F99003371A4 /* SignUp.swift */; };
 		A91BEF522675A526003371A4 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF512675A526003371A4 /* SignIn.swift */; };
+		A91BEF542675A806003371A4 /* TabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF532675A806003371A4 /* TabScene.swift */; };
+		A91BEF562675B15B003371A4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF552675B15B003371A4 /* Home.swift */; };
+		A91BEF582675B368003371A4 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF572675B368003371A4 /* Purchase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unauthenticated.swift; sourceTree = "<group>"; };
 		A91BEF4F26759F99003371A4 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		A91BEF512675A526003371A4 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		A91BEF532675A806003371A4 /* TabScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScene.swift; sourceTree = "<group>"; };
+		A91BEF552675B15B003371A4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A91BEF572675B368003371A4 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */,
 				A91BEF4F26759F99003371A4 /* SignUp.swift */,
 				A91BEF512675A526003371A4 /* SignIn.swift */,
+				A91BEF532675A806003371A4 /* TabScene.swift */,
+				A91BEF552675B15B003371A4 /* Home.swift */,
+				A91BEF572675B368003371A4 /* Purchase.swift */,
 				A91BEF2126758651003371A4 /* Assets.xcassets */,
 				A91BEF2326758651003371A4 /* Preview Content */,
 			);
@@ -272,12 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91BEF582675B368003371A4 /* Purchase.swift in Sources */,
 				A91BEF5026759F99003371A4 /* SignUp.swift in Sources */,
 				A91BEF46267586D0003371A4 /* Main.swift in Sources */,
+				A91BEF562675B15B003371A4 /* Home.swift in Sources */,
 				A91BEF2026758650003371A4 /* ContentView.swift in Sources */,
 				A91BEF4A2675955C003371A4 /* Loading.swift in Sources */,
 				A91BEF4C26759A1B003371A4 /* MagellanApp.swift in Sources */,
 				A91BEF4E26759AC4003371A4 /* Unauthenticated.swift in Sources */,
+				A91BEF542675A806003371A4 /* TabScene.swift in Sources */,
 				A91BEF4826758739003371A4 /* AppState.swift in Sources */,
 				A91BEF522675A526003371A4 /* SignIn.swift in Sources */,
 			);
