@@ -13,6 +13,8 @@
 		A91BEF2526758651003371A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BEF2426758651003371A4 /* Preview Assets.xcassets */; };
 		A91BEF2F26758651003371A4 /* MagellanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF2E26758651003371A4 /* MagellanTests.swift */; };
 		A91BEF3926758651003371A4 /* MagellanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF3826758651003371A4 /* MagellanUITests.swift */; };
+		A91BEF46267586D0003371A4 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF45267586D0003371A4 /* Main.swift */; };
+		A91BEF4826758739003371A4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4726758739003371A4 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		A91BEF2E26758651003371A4 /* MagellanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanTests.swift; sourceTree = "<group>"; };
 		A91BEF3426758651003371A4 /* MagellanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagellanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91BEF3826758651003371A4 /* MagellanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanUITests.swift; sourceTree = "<group>"; };
+		A91BEF45267586D0003371A4 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		A91BEF4726758739003371A4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				A91BEF1D26758650003371A4 /* MagellanApp.swift */,
+				A91BEF4726758739003371A4 /* AppState.swift */,
+				A91BEF45267586D0003371A4 /* Main.swift */,
 				A91BEF1F26758650003371A4 /* ContentView.swift */,
 				A91BEF2126758651003371A4 /* Assets.xcassets */,
 				A91BEF2326758651003371A4 /* Preview Content */,
@@ -254,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91BEF46267586D0003371A4 /* Main.swift in Sources */,
 				A91BEF2026758650003371A4 /* ContentView.swift in Sources */,
 				A91BEF1E26758650003371A4 /* MagellanApp.swift in Sources */,
+				A91BEF4826758739003371A4 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +461,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

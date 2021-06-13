@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+@available(iOS 14.0, *)
 struct MagellanApp: App {
     var body: some Scene {
         WindowGroup {
