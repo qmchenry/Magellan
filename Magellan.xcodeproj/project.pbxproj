@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91BEF1E26758650003371A4 /* MagellanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF1D26758650003371A4 /* MagellanApp.swift */; };
+		A91BEF2026758650003371A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF1F26758650003371A4 /* ContentView.swift */; };
+		A91BEF2226758651003371A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BEF2126758651003371A4 /* Assets.xcassets */; };
+		A91BEF2526758651003371A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BEF2426758651003371A4 /* Preview Assets.xcassets */; };
+		A91BEF2F26758651003371A4 /* MagellanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF2E26758651003371A4 /* MagellanTests.swift */; };
+		A91BEF3926758651003371A4 /* MagellanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF3826758651003371A4 /* MagellanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A91BEF2B26758651003371A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91BEF1226758650003371A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91BEF1926758650003371A4;
+			remoteInfo = Magellan;
+		};
+		A91BEF3526758651003371A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91BEF1226758650003371A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91BEF1926758650003371A4;
+			remoteInfo = Magellan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A91BEF1A26758650003371A4 /* Magellan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magellan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91BEF1D26758650003371A4 /* MagellanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanApp.swift; sourceTree = "<group>"; };
+		A91BEF1F26758650003371A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A91BEF2126758651003371A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91BEF2426758651003371A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A91BEF2A26758651003371A4 /* MagellanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagellanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91BEF2E26758651003371A4 /* MagellanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanTests.swift; sourceTree = "<group>"; };
+		A91BEF3426758651003371A4 /* MagellanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagellanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91BEF3826758651003371A4 /* MagellanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91BEF1726758650003371A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF2726758651003371A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF3126758651003371A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91BEF1126758650003371A4 = {
+			isa = PBXGroup;
+			children = (
+				A91BEF1C26758650003371A4 /* Magellan */,
+				A91BEF2D26758651003371A4 /* MagellanTests */,
+				A91BEF3726758651003371A4 /* MagellanUITests */,
+				A91BEF1B26758650003371A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A91BEF1B26758650003371A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A91BEF1A26758650003371A4 /* Magellan.app */,
+				A91BEF2A26758651003371A4 /* MagellanTests.xctest */,
+				A91BEF3426758651003371A4 /* MagellanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91BEF1C26758650003371A4 /* Magellan */ = {
+			isa = PBXGroup;
+			children = (
+				A91BEF1D26758650003371A4 /* MagellanApp.swift */,
+				A91BEF1F26758650003371A4 /* ContentView.swift */,
+				A91BEF2126758651003371A4 /* Assets.xcassets */,
+				A91BEF2326758651003371A4 /* Preview Content */,
+			);
+			path = Magellan;
+			sourceTree = "<group>";
+		};
+		A91BEF2326758651003371A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A91BEF2426758651003371A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A91BEF2D26758651003371A4 /* MagellanTests */ = {
+			isa = PBXGroup;
+			children = (
+				A91BEF2E26758651003371A4 /* MagellanTests.swift */,
+			);
+			path = MagellanTests;
+			sourceTree = "<group>";
+		};
+		A91BEF3726758651003371A4 /* MagellanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A91BEF3826758651003371A4 /* MagellanUITests.swift */,
+			);
+			path = MagellanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91BEF1926758650003371A4 /* Magellan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BEF3C26758651003371A4 /* Build configuration list for PBXNativeTarget "Magellan" */;
+			buildPhases = (
+				A91BEF1626758650003371A4 /* Sources */,
+				A91BEF1726758650003371A4 /* Frameworks */,
+				A91BEF1826758650003371A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magellan;
+			productName = Magellan;
+			productReference = A91BEF1A26758650003371A4 /* Magellan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A91BEF2926758651003371A4 /* MagellanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BEF3F26758651003371A4 /* Build configuration list for PBXNativeTarget "MagellanTests" */;
+			buildPhases = (
+				A91BEF2626758651003371A4 /* Sources */,
+				A91BEF2726758651003371A4 /* Frameworks */,
+				A91BEF2826758651003371A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91BEF2C26758651003371A4 /* PBXTargetDependency */,
+			);
+			name = MagellanTests;
+			productName = MagellanTests;
+			productReference = A91BEF2A26758651003371A4 /* MagellanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A91BEF3326758651003371A4 /* MagellanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BEF4226758651003371A4 /* Build configuration list for PBXNativeTarget "MagellanUITests" */;
+			buildPhases = (
+				A91BEF3026758651003371A4 /* Sources */,
+				A91BEF3126758651003371A4 /* Frameworks */,
+				A91BEF3226758651003371A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91BEF3626758651003371A4 /* PBXTargetDependency */,
+			);
+			name = MagellanUITests;
+			productName = MagellanUITests;
+			productReference = A91BEF3426758651003371A4 /* MagellanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91BEF1226758650003371A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A91BEF1926758650003371A4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A91BEF2926758651003371A4 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A91BEF1926758650003371A4;
+					};
+					A91BEF3326758651003371A4 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A91BEF1926758650003371A4;
+					};
+				};
+			};
+			buildConfigurationList = A91BEF1526758650003371A4 /* Build configuration list for PBXProject "Magellan" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A91BEF1126758650003371A4;
+			productRefGroup = A91BEF1B26758650003371A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91BEF1926758650003371A4 /* Magellan */,
+				A91BEF2926758651003371A4 /* MagellanTests */,
+				A91BEF3326758651003371A4 /* MagellanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91BEF1826758650003371A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91BEF2526758651003371A4 /* Preview Assets.xcassets in Resources */,
+				A91BEF2226758651003371A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF2826758651003371A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF3226758651003371A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91BEF1626758650003371A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91BEF2026758650003371A4 /* ContentView.swift in Sources */,
+				A91BEF1E26758650003371A4 /* MagellanApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF2626758651003371A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91BEF2F26758651003371A4 /* MagellanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BEF3026758651003371A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91BEF3926758651003371A4 /* MagellanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91BEF2C26758651003371A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91BEF1926758650003371A4 /* Magellan */;
+			targetProxy = A91BEF2B26758651003371A4 /* PBXContainerItemProxy */;
+		};
+		A91BEF3626758651003371A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91BEF1926758650003371A4 /* Magellan */;
+			targetProxy = A91BEF3526758651003371A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A91BEF3A26758651003371A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A91BEF3B26758651003371A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91BEF3D26758651003371A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Magellan/Preview Content\"";
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.Magellan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A91BEF3E26758651003371A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Magellan/Preview Content\"";
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.Magellan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A91BEF4026758651003371A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.MagellanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magellan.app/Magellan";
+			};
+			name = Debug;
+		};
+		A91BEF4126758651003371A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.MagellanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magellan.app/Magellan";
+			};
+			name = Release;
+		};
+		A91BEF4326758651003371A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.MagellanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Magellan;
+			};
+			name = Debug;
+		};
+		A91BEF4426758651003371A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WR66L3TZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallplanet.MagellanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Magellan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91BEF1526758650003371A4 /* Build configuration list for PBXProject "Magellan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BEF3A26758651003371A4 /* Debug */,
+				A91BEF3B26758651003371A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BEF3C26758651003371A4 /* Build configuration list for PBXNativeTarget "Magellan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BEF3D26758651003371A4 /* Debug */,
+				A91BEF3E26758651003371A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BEF3F26758651003371A4 /* Build configuration list for PBXNativeTarget "MagellanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BEF4026758651003371A4 /* Debug */,
+				A91BEF4126758651003371A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BEF4226758651003371A4 /* Build configuration list for PBXNativeTarget "MagellanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BEF4326758651003371A4 /* Debug */,
+				A91BEF4426758651003371A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91BEF1226758650003371A4 /* Project object */;
+}
