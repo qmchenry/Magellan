@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A91BEF1E26758650003371A4 /* MagellanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF1D26758650003371A4 /* MagellanApp.swift */; };
 		A91BEF2026758650003371A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF1F26758650003371A4 /* ContentView.swift */; };
 		A91BEF2226758651003371A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BEF2126758651003371A4 /* Assets.xcassets */; };
 		A91BEF2526758651003371A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BEF2426758651003371A4 /* Preview Assets.xcassets */; };
@@ -15,6 +14,11 @@
 		A91BEF3926758651003371A4 /* MagellanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF3826758651003371A4 /* MagellanUITests.swift */; };
 		A91BEF46267586D0003371A4 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF45267586D0003371A4 /* Main.swift */; };
 		A91BEF4826758739003371A4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4726758739003371A4 /* AppState.swift */; };
+		A91BEF4A2675955C003371A4 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF492675955C003371A4 /* Loading.swift */; };
+		A91BEF4C26759A1B003371A4 /* MagellanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4B26759A1B003371A4 /* MagellanApp.swift */; };
+		A91BEF4E26759AC4003371A4 /* Unauthenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */; };
+		A91BEF5026759F99003371A4 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF4F26759F99003371A4 /* SignUp.swift */; };
+		A91BEF522675A526003371A4 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF512675A526003371A4 /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		A91BEF1A26758650003371A4 /* Magellan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magellan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A91BEF1D26758650003371A4 /* MagellanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanApp.swift; sourceTree = "<group>"; };
 		A91BEF1F26758650003371A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A91BEF2126758651003371A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91BEF2426758651003371A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +49,11 @@
 		A91BEF3826758651003371A4 /* MagellanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanUITests.swift; sourceTree = "<group>"; };
 		A91BEF45267586D0003371A4 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		A91BEF4726758739003371A4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A91BEF492675955C003371A4 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		A91BEF4B26759A1B003371A4 /* MagellanApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagellanApp.swift; sourceTree = "<group>"; };
+		A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unauthenticated.swift; sourceTree = "<group>"; };
+		A91BEF4F26759F99003371A4 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		A91BEF512675A526003371A4 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +104,14 @@
 		A91BEF1C26758650003371A4 /* Magellan */ = {
 			isa = PBXGroup;
 			children = (
-				A91BEF1D26758650003371A4 /* MagellanApp.swift */,
 				A91BEF4726758739003371A4 /* AppState.swift */,
+				A91BEF4B26759A1B003371A4 /* MagellanApp.swift */,
 				A91BEF45267586D0003371A4 /* Main.swift */,
 				A91BEF1F26758650003371A4 /* ContentView.swift */,
+				A91BEF492675955C003371A4 /* Loading.swift */,
+				A91BEF4D26759AC4003371A4 /* Unauthenticated.swift */,
+				A91BEF4F26759F99003371A4 /* SignUp.swift */,
+				A91BEF512675A526003371A4 /* SignIn.swift */,
 				A91BEF2126758651003371A4 /* Assets.xcassets */,
 				A91BEF2326758651003371A4 /* Preview Content */,
 			);
@@ -260,10 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91BEF5026759F99003371A4 /* SignUp.swift in Sources */,
 				A91BEF46267586D0003371A4 /* Main.swift in Sources */,
 				A91BEF2026758650003371A4 /* ContentView.swift in Sources */,
-				A91BEF1E26758650003371A4 /* MagellanApp.swift in Sources */,
+				A91BEF4A2675955C003371A4 /* Loading.swift in Sources */,
+				A91BEF4C26759A1B003371A4 /* MagellanApp.swift in Sources */,
+				A91BEF4E26759AC4003371A4 /* Unauthenticated.swift in Sources */,
 				A91BEF4826758739003371A4 /* AppState.swift in Sources */,
+				A91BEF522675A526003371A4 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

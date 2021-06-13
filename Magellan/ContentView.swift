@@ -16,9 +16,9 @@ struct ContentView: View {
         Group {
             switch nav.mainView {
             case .loading:
-                Text("Loading")
+                Loading()
             case .unauthenticated:
-                Text("unauthenticated")
+                Unauthenticated()
             case .tabView:
                 Text("TabView")
             }
@@ -28,26 +28,32 @@ struct ContentView: View {
         }
     }
 
-}
-
-extension ContentView {
     enum MainView {
         case loading
         case unauthenticated
         case tabView
     }
-    
+}
+
+extension ContentView {
+
     final class Navigator: ObservableObject {
-        @Published var mainView: MainView = .loading
-        
+        @Published var mainView: ContentView.MainView = .loading
+
         func update(forState state: AppState.State) {
+            let view = view(forState: state)
+            guard view != mainView else { return }
+            mainView = view
+        }
+
+        private func view(forState state: AppState.State) -> ContentView.MainView {
             switch state {
             case .loading:
-                mainView = .loading
+                return .loading
             case .unauthenticated:
-                mainView = .unauthenticated
-            case .home, .account, .search:
-                mainView = .tabView
+                return .unauthenticated
+            case .home, .purchase, .account, .search:
+                return .tabView
             }
         }
     }
