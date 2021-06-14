@@ -9,6 +9,10 @@ import Foundation
 import Combine
 
 final class AppState: ObservableObject {
+//    static let initialState: State = .unauthenticated(then: .search(item: "2"))
+//    static let initialState: State = .unauthenticated(then: .home)
+    static let initialState: State = .home
+
     indirect enum State {
         case loading
         case unauthenticated(then: State)
@@ -29,6 +33,9 @@ final class AppState: ObservableObject {
 
     func unauthenticatedComplete(isAuthenticated: Bool) {
         self.isAuthenticated = isAuthenticated
+        if !isAuthenticated {
+            state = .home
+        }
         guard case let .unauthenticated(then) = state else { state = .home; return }
         state = then
     }

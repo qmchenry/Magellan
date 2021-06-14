@@ -8,17 +8,34 @@
 import SwiftUI
 import Combine
 
+class SearchViewModel: ObservableObject {
+    @Published var buyables = ["1", "2", "3"]
+}
+
 struct Search: View {
-    @State var buyables = ["1", "2", "3"]
     @EnvironmentObject var state: AppState
-    @ObservedObject var nav = Navigator()
+    @ObservedObject var viewModel = SearchViewModel()
+    @ObservedObject var selection = Selection()
 
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 30) {
-                    ForEach(Array(zip(buyables.indices, buyables)), id: \.0) { index, buyable in
-                        NavigationLink("Purchase \(buyable)", destination: Purchase(item: buyable), isActive: $nav.isActive[index])
+                    if isValid() {
+                        ForEach(Array(zip(viewModel.buyables.indices, viewModel.buyables)), id: \.0) { index, buyable in
+                            NavigationLink(
+                              destination: Purchase(item: buyable),
+                              isActive: $selection.isActive[index],
+                              label: { EmptyView() }
+                            )
+                            Button {
+                                startPurchase(item: buyable)
+                            } label: {
+                                Text("Purchase \(buyable)")
+                            }
+                        }
+                    } else {
+                        Text("why is this happening?")
                     }
                     Text("This is similar to Home's approach, but applies an Identifiable override for NavigationLink vs the built-in Hashable binding. It also uses a single NavigationLink in the background that is an EmptyView when the binding is nil.")
                 }
@@ -27,44 +44,62 @@ struct Search: View {
             .navigationBarTitle("🔎 Search")
         }
         .onReceive(state.$state) { state in
-            nav.update(forState: state)
+            update(forState: state)
+        }
+        .onAppear {
+            setup()
         }
     }
 
-    init() {
-        nav.update(buyables: buyables)
+    func startPurchase(item: String) {
+        if state.isAuthenticated {
+            state.state = .search(item: item)
+        } else {
+            state.state = .unauthenticated(then: .search(item: item))
+        }
     }
-}
 
-extension String: Identifiable {
-    public var id: String {
-        self
+    @State var isActive: [Bool] = []
+
+    func isValid() -> Bool {
+        if viewModel.buyables.count != selection.isActive.count {
+            selection.isActive = isActiveArray(forBuyables: viewModel.buyables, state: state.state)
+        }
+        return true
     }
-}
 
-extension Search {
-    final class Navigator: ObservableObject {
+    func update(forState state: AppState.State) {
+        guard let nowActive = isActive(forState: state), nowActive != isActive else { return }
+        isActive = nowActive
+    }
+
+    private func isActive(forState state: AppState.State) -> [Bool]? {
+        guard case let .search(item) = state else { return nil }
+        return viewModel.buyables.map { buyable in item == buyable }
+    }
+
+    @State private var cancellable = Set<AnyCancellable>()
+
+    func isActiveArray(forBuyables buyables: [String], state: AppState.State) -> [Bool] {
+        if case let .search(item) = state {
+            return buyables.map { $0 == item }
+        } else {
+            return [Bool](repeating: false, count: buyables.count)
+        }
+    }
+
+    func setup() {
+        viewModel.$buyables
+            .combineLatest(state.$state)
+            .map { buyables, state -> [Bool] in
+                isActiveArray(forBuyables: buyables, state: state)
+            }
+            .assign(to: \.isActive, on: selection)
+            .store(in: &cancellable)
+    }
+
+    class Selection: ObservableObject {
         @Published var isActive: [Bool] = []
-        private var buyables = [String]()
-
-        func update(forState state: AppState.State) {
-            guard let nowActive = isActive(forState: state), nowActive != isActive else { return }
-            isActive = nowActive
-        }
-
-        private func isActive(forState state: AppState.State) -> [Bool]? {
-            guard case let .search(item) = state else { return nil }
-            return buyables.map { buyable in item == buyable }
-        }
-
-        func update(buyables: [String]) {
-            self.buyables = buyables
-            isActive = buyables.map { _ in false }
-        }
-
-        private var cancellable = Set<AnyCancellable>()
-        init() {
-        }
     }
 }
 
