@@ -11,7 +11,7 @@ import SwiftUI
 struct MagellanApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(AppState(initialState: .purchase(item: "2")))
+            ContentView().environmentObject(AppState(initialState: .search(item: "2")))
         }
     }
 }

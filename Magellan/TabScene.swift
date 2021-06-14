@@ -20,7 +20,7 @@ struct TabScene: View {
             .tag(Tab.home)
 
             VStack {
-                Text("Search Tab")
+                Search()
             }
             .tabItem({ TabLabel(tab: .search) })
             .tag(Tab.search)
@@ -30,6 +30,9 @@ struct TabScene: View {
             }
             .tabItem({ TabLabel(tab: .account) })
             .tag(Tab.account)
+        }
+        .onReceive(state.$state) { state in
+            nav.update(forState: state)
         }
     }
 
@@ -100,6 +103,6 @@ extension TabScene {
 struct TabScene_Previews: PreviewProvider {
     static var previews: some View {
         TabScene()
-            .environmentObject(AppState(initialState: .search))
+            .environmentObject(AppState(initialState: .search(item: nil)))
     }
 }

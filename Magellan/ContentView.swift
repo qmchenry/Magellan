@@ -62,6 +62,6 @@ extension ContentView {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(AppState(initialState: .unauthenticated(then: .search)))
+            .environmentObject(AppState(initialState: .unauthenticated(then: .search(item: nil))))
     }
 }

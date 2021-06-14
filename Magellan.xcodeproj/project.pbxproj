@@ -22,6 +22,7 @@
 		A91BEF542675A806003371A4 /* TabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF532675A806003371A4 /* TabScene.swift */; };
 		A91BEF562675B15B003371A4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF552675B15B003371A4 /* Home.swift */; };
 		A91BEF582675B368003371A4 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF572675B368003371A4 /* Purchase.swift */; };
+		A91BEF5C2676ACF8003371A4 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BEF5B2676ACF8003371A4 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A91BEF532675A806003371A4 /* TabScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScene.swift; sourceTree = "<group>"; };
 		A91BEF552675B15B003371A4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A91BEF572675B368003371A4 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		A91BEF5B2676ACF8003371A4 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				A91BEF512675A526003371A4 /* SignIn.swift */,
 				A91BEF532675A806003371A4 /* TabScene.swift */,
 				A91BEF552675B15B003371A4 /* Home.swift */,
+				A91BEF5B2676ACF8003371A4 /* Search.swift */,
 				A91BEF572675B368003371A4 /* Purchase.swift */,
 				A91BEF2126758651003371A4 /* Assets.xcassets */,
 				A91BEF2326758651003371A4 /* Preview Content */,
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91BEF5C2676ACF8003371A4 /* Search.swift in Sources */,
 				A91BEF582675B368003371A4 /* Purchase.swift in Sources */,
 				A91BEF5026759F99003371A4 /* SignUp.swift in Sources */,
 				A91BEF46267586D0003371A4 /* Main.swift in Sources */,

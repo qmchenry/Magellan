@@ -15,7 +15,7 @@ final class AppState: ObservableObject {
         case home
         case purchase(item: String)
         case account
-        case search
+        case search(item: String?)
     }
     
     @Published var state: State

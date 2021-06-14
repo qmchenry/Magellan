@@ -37,6 +37,7 @@ struct Unauthenticated: View {
                     Text("This is the first page of a navigation stack that lets an unauthenticated user sign up or sign in. The AppState.State representing it carries the next State like .unauthenticated(then: .home) such the that intent for what follows the unauthenticated flow is maintained as the user steps through the unauth views.\nThe AppState.state property is available in the View to allow the content to be contextual dependent on the then: State.")
 
                 }
+                .padding(.horizontal)
             }
         }
     }
