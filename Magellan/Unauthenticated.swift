@@ -12,7 +12,7 @@ struct Unauthenticated: View {
 
     var isThenPurchase: Bool {
         switch state.state {
-        case .purchase:
+        case .purchase, .search:
             return true
         default:
             return false

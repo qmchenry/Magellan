@@ -12,7 +12,7 @@ class SearchViewModel: ObservableObject {
     @Published var buyables: [String]
     @Published var isActive: [Bool]
 
-    func selectItem(fromState state: AppState.State) {
+    func update(fromState state: AppState.State) {
         let updatedIsActive = makeIsActive(forState: state)
         if updatedIsActive != isActive {
             isActive = updatedIsActive
@@ -64,7 +64,7 @@ struct Search: View {
             .navigationBarTitle("🔎 Search")
         }
         .onReceive(state.$state) { state in
-            viewModel.selectItem(fromState: state)
+            viewModel.update(fromState: state)
         }
     }
 

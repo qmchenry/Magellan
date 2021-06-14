@@ -29,6 +29,7 @@ struct Account: View {
                             .multilineTextAlignment(.leading)
                     }
                 }
+                Spacer()
             }
             .navigationBarTitle("⚙️ Account")
         }
