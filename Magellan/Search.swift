@@ -9,13 +9,21 @@ import SwiftUI
 import Combine
 
 class SearchViewModel: ObservableObject {
-    @Published var buyables = ["1", "2", "3"]
+    @Published var buyables: [String]
+    @Published var isActive: [Bool]
+
+    init() {
+        let models = ["1", "2", "3"]
+        buyables = models
+        isActive = models.map { _ in false }
+        // left out setting up a combine pipeline to keep isActive the same count as buyables
+    }
 }
 
 struct Search: View {
     @EnvironmentObject var state: AppState
     @ObservedObject var viewModel = SearchViewModel()
-    @ObservedObject var selection = Selection()
+//    @ObservedObject var selection = Selection()
 
     var body: some View {
         NavigationView {
@@ -25,7 +33,7 @@ struct Search: View {
                         ForEach(Array(zip(viewModel.buyables.indices, viewModel.buyables)), id: \.0) { index, buyable in
                             NavigationLink(
                               destination: Purchase(item: buyable),
-                              isActive: $selection.isActive[index],
+                              isActive: $viewModel.isActive[index],
                               label: { EmptyView() }
                             )
                             Button {
@@ -46,9 +54,6 @@ struct Search: View {
         .onReceive(state.$state) { state in
             update(forState: state)
         }
-        .onAppear {
-            setup()
-        }
     }
 
     func startPurchase(item: String) {
@@ -59,18 +64,16 @@ struct Search: View {
         }
     }
 
-    @State var isActive: [Bool] = []
-
     func isValid() -> Bool {
-        if viewModel.buyables.count != selection.isActive.count {
-            selection.isActive = isActiveArray(forBuyables: viewModel.buyables, state: state.state)
+        if viewModel.buyables.count != viewModel.isActive.count {
+            viewModel.isActive = isActiveArray(forBuyables: viewModel.buyables, state: state.state)
         }
         return true
     }
 
     func update(forState state: AppState.State) {
-        guard let nowActive = isActive(forState: state), nowActive != isActive else { return }
-        isActive = nowActive
+        guard let nowActive = isActive(forState: state), nowActive != viewModel.isActive else { return }
+        viewModel.isActive = nowActive
     }
 
     private func isActive(forState state: AppState.State) -> [Bool]? {
@@ -78,28 +81,12 @@ struct Search: View {
         return viewModel.buyables.map { buyable in item == buyable }
     }
 
-    @State private var cancellable = Set<AnyCancellable>()
-
     func isActiveArray(forBuyables buyables: [String], state: AppState.State) -> [Bool] {
         if case let .search(item) = state {
             return buyables.map { $0 == item }
         } else {
             return [Bool](repeating: false, count: buyables.count)
         }
-    }
-
-    func setup() {
-        viewModel.$buyables
-            .combineLatest(state.$state)
-            .map { buyables, state -> [Bool] in
-                isActiveArray(forBuyables: buyables, state: state)
-            }
-            .assign(to: \.isActive, on: selection)
-            .store(in: &cancellable)
-    }
-
-    class Selection: ObservableObject {
-        @Published var isActive: [Bool] = []
     }
 }
 
