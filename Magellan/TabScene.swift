@@ -26,7 +26,7 @@ struct TabScene: View {
             .tag(Tab.search)
 
             VStack {
-                Text("Account Tab")
+                Account()
             }
             .tabItem({ TabLabel(tab: .account) })
             .tag(Tab.account)
